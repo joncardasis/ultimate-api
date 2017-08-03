@@ -33,10 +33,3 @@ To run the full test suite execute the following from the top level directory.
 ```Python
 python test.py
 ```
-
-
-## ToDo:
-- [ ] Add Unit Tests
-  - Test for Ed Sheeran - Perfect
-  - Test for Jason Mraz - I'm Yours (because of the title parsing)
-  - Test for Passenger - Let Her Go

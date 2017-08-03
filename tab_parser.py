@@ -26,6 +26,8 @@ if __name__ == '__main__':
 
     json_data = json_from_ultimate_tab(url)
 
-    print(json_data)
-    with open("data.json", "w") as file:
-         file.write(json_data)
+    pretty_format_json = json.dumps(json.loads(json_data), indent=4, sort_keys=True)
+    print(pretty_format_json)
+
+    #with open("data.json", "w") as file:
+    #     file.write(pretty_format_json)
