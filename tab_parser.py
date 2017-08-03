@@ -14,9 +14,6 @@ def json_from_ultimate_tab(url: str) -> json:
     data = json.dumps(tab_dict, ensure_ascii=False)
     return data
 
-# issue: codes like <'> are shows in unicode as '\u2019' -> need to decode
-
-
 
 if __name__ == '__main__':
     try:
