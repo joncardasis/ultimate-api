@@ -24,10 +24,16 @@
 
 1. Usage:
 
-  ```Python
-  export FLASK_DEBUG=1 // Export for debug
-  python run.py
-  ```
+    ```Python
+    export FLASK_DEBUG=1 // Export for debug
+    python run.py
+    ```
+
+## Endpoints
+
+| Method | Endpoint |  Parameters | Result |
+| ------ | -------- | ---------- | ------ |
+| `GET`  | `/tab`   | `url`: A full (including protocol) url for an ultimate-guitar.com tab. | JSON response containing tab info as well as each tab line
 
 ## Running Tests
 To run the full test suite execute the following from the top level directory.
