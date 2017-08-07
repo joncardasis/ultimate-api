@@ -25,7 +25,8 @@
 1. Usage:
 
   ```Python
-  python tab_parser.py {ultimate-guitar-tab-url}
+  export FLASK_DEBUG=1 // Export for debug
+  python run.py
   ```
 
 ## Running Tests

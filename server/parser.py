@@ -1,6 +1,6 @@
 import json
 from bs4 import BeautifulSoup
-from tab import UltimateTab, UltimateTabInfo
+from .tab import UltimateTab, UltimateTabInfo
 import re
 
 def _tab_info_from_soup(soup: BeautifulSoup) -> UltimateTabInfo:
