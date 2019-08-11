@@ -1,39 +1,51 @@
-# Ultimate-API
+<p align="center">
+    <img src=".github/Logo.png" width="600" alt="Ultimate API" />
+</p>
+<p align="center">:guitar: Download your favorite tabs from ultimate-guitar.com</p>
 
-:guitar: *An API for ultimate-guitar.com*
+<p align="center">
+  <img src="https://img.shields.io/badge/Python->=3.6-blue.svg" />
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" />
+</p>
 
-![Python-Version](https://img.shields.io/badge/Python-3.6.1-blue.svg)
+## Features
+- Download Ultimate Guitar tabs as:
+  - JSON
+  - [Tabdown]() format.
+  - PDF
+- [Tabdown]() spec and parser
+- Coming Soon:
+    - User Account Info
+    - Access to your private tabs
 
-## Setup
-1. Install python3 from https://www.python.org/downloads/
 
-1. Create a virtual environment of python3:
+## Installation
+**Note:** Python 3.6 or higher is required. (Download python3 from https://www.python.org/downloads/)
 
+```Bash
+# Clone the repo
+$ git clone git@github.com:joncardasis/ultimate-api.git
+$ cd ultimate-api
+
+# Install the requirements
+$ python3 -m pip install -r requirements.txt
+```
+
+<!-- Create a virtual environment of python3:
     ```Python
     # Install virtualenv:
     # pip install virtualenv
     virtualenv -p /usr/local/bin/python3 venv
     source venv/bin/activate
-    ```
+    ``` -->
 
-1. Install dependancies:
-
-    ```Python
-    pip install -r requirements.txt
-    ```
-
-1. Usage:
+## Usage:
 
     ```Python
     export FLASK_DEBUG=1 // Export for debug
     python run.py
     ```
 
-## Endpoints
-
-| Method | Endpoint |  Parameters | Result |
-| ------ | -------- | ---------- | ------ |
-| `GET`  | `/tab`   | `url`: A full (including protocol) url for an ultimate-guitar.com tab. | JSON response containing tab info as well as each tab line
 
 ## Running Tests
 To run the full test suite execute the following from the top level directory.
